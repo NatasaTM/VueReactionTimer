@@ -1,6 +1,6 @@
 <template>
-<div class="block">Reaction time: {{ score }}</div>
-<p>Rank: {{ rank }}</p>
+<p class="rTime">Reaction time: {{ score }}</p>
+<p class="rank">Rank: {{ rank }}</p>
 </template>
 
 <script>
@@ -23,14 +23,14 @@ mounted(){
 }
 </script>
 
+
 <style>
-.block {
-    width: 400px;
-    border-radius: 20px;
-    background: #0faf87;
-    color: white;
-    text-align: center;
-    padding: 100px 0;
-    margin: 40px auto;
+.rTime {
+    font-weight: bold;
+}
+.rank {
+    font-size: 1.4em;
+    color: #0faf87;
+    font-weight: bold;
 }
 </style>
